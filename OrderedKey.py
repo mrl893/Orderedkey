@@ -8,10 +8,12 @@ ship = {
     "Price": 250
 }
 
-print(ship)
-print(collections.OrderedDict(ship))
-
 ordered_dict = collections._OrderedDictItemsView(sorted(ship.items()))
+
+# print(ship)
+# print(collections.OrderedDict(ship))
+
+
 
 list_key = ["Name","HP","Blasters","Thrusters","Price"]
 ordered_list = [(key,ship[key]) for key in list_key]
